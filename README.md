@@ -1,21 +1,23 @@
-README
 
-IST-303 (Claremont Graduate University)
+#Course
+IST-303 Software Development (Claremont Graduate University)
 
-Team: UNO 
+#Team Info
 
-Members:
-Jovany – Penny – Tim – Kevin
+##Name:
+Uno
+##Team Members:
+Jovany Funes  
+Tim Chen  
+Penny Peng    
+Kevin Xun
 
-ServiceUNO Project (Concept):
+##ServiceUNO Project (Concept):
 
 ServiceUNO will be an application with a web interface, it will eventually be integrated by using hardware such as the raspberry pi. ServiceUNO will collect key data that will be quantified based on key services provided by the server and bartender. This information will also be valuable to businesses, the business will benefit from the data to evaluate customer service experience and improve their services by customer feedback. ServiceUNO will rate the server and feature their great customer service skills in order to maximize their gaining potential (TIPS).  
 
-Project Requirements
-People working on the following project requirements:
-Jovany, Penny, Tim, Kevin
 
-Outline of User Stories:
+##Outline of User Stories:
 
 •	Outline Server Flow (observe and collect data) – Due 02/23
 
@@ -38,8 +40,8 @@ Outline of User Stories:
 
 •	Raspberry pi 04/20
 
-***The outline is subject to change.
-User Stories (Restaurant server):
+**The outline is subject to change.
+User Stories (Restaurant server):**
 
 This is the user story in regards to the restaurant server and the coding in python that needs to be completed before the date of 03/09.
 
