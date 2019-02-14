@@ -2,9 +2,7 @@
 # Course
 IST-303 Software Development (Claremont Graduate University)
 
-# Team Info
-
-## Name:
+## Team Name:
 Uno
 ## Team Members:
 Jovany Funes  
