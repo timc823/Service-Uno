@@ -1,23 +1,23 @@
 
-#Course
+# Course
 IST-303 Software Development (Claremont Graduate University)
 
-#Team Info
+# Team Info
 
-##Name:
+## Name:
 Uno
-##Team Members:
+## Team Members:
 Jovany Funes  
 Tim Chen  
 Penny Peng    
 Kevin Xun
 
-##ServiceUNO Project (Concept):
+## ServiceUNO Project (Concept):
 
 ServiceUNO will be an application with a web interface, it will eventually be integrated by using hardware such as the raspberry pi. ServiceUNO will collect key data that will be quantified based on key services provided by the server and bartender. This information will also be valuable to businesses, the business will benefit from the data to evaluate customer service experience and improve their services by customer feedback. ServiceUNO will rate the server and feature their great customer service skills in order to maximize their gaining potential (TIPS).  
 
 
-##Outline of User Stories:
+## Outline of User Stories:
 
 •	Outline Server Flow (observe and collect data) – Due 02/23
 
