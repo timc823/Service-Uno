@@ -15,14 +15,24 @@ Kevin Xun
 ServiceUNO will be an application with a web interface, it will eventually be integrated by using hardware such as the raspberry pi. ServiceUNO will collect key data that will be quantified based on key services provided by the server and bartender. This information will also be valuable to businesses, the business will benefit from the data to evaluate customer service experience and improve their services by customer feedback. ServiceUNO will rate the server and feature their great customer service skills in order to maximize their gaining potential (TIPS).  
 
 
+## Stake Holder
+
+**Restaurant business owners**
+
+**Customers**
+
+**Servers (restaurants)**
+
+
+
 ## Outline of User Stories:
 
 •	Outline Server Flow (observe and collect data) – Due 02/23
 
 •	Research on development of application:
 
-    a.	Web interface -- 02/23
-    b.	Python programing -- 02/23
+    a.	Python programing -- 02/23
+    b.	Web interface -- 02/23
     c.	Servers for database -- 02/23
     d.	Raspberry pi – 02/23
     
@@ -53,3 +63,5 @@ This is the user story in regards to the restaurant server and the coding in pyt
 	Code in python: Customer inputs attentive of server 1-7 scale? Due -- 03/02
 	Code in python: Timer stops: results are calculated in %.. Add tip calculator Due - 03/06
 	Code in python: Customer input on server visit the table 1-10 (higher the better) Due - 03/07
+	
+
