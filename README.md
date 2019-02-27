@@ -8,7 +8,7 @@ Uno
 Jovany Funes  
 Tim Chen  
 Penny Peng    
-Kevin Xun
+Kevin Jin
 
 ## ServiceUNO Project (Concept):
 
@@ -23,7 +23,7 @@ The first idea we come up with this project because we noticed that we all had s
 
 **Restaurant business owners**
 
-As a restaurant business owner, he/she might feel unhappy if there is any complaint about the service in the restaurant. A business owner always wants their server providing the best service. With our program, the business owner can know how a customer feels to different servers in the restaurant. For some servers that provide good quality services, the business owner may offer some bonus as a reward. On the other hand, for other servers might provide a bad quality of the service, the restaurant can offer additional training to make them provide better service in the future. 
+As a restaurant business owner, he/she might feel unhappy if there is any complaint about the service in the restaurant. A business owner always wants their server providing the best service. With our program, the business owner can know how a customer feels to different servers in the restaurant. For some servers that provide good quality services, the business owner may offer some bonus as a reward. On the other hand, for other servers might provide a bad quality of the service, the restaurant can offer additional training to make them provide better service in the future.
 
 
 **Servers (restaurants)**
@@ -41,7 +41,7 @@ As a server working in the restaurant, they are providing service to customers a
     b.	Web interface -- 02/23
     c.	Servers for database -- 02/23
     d.	Raspberry pi – 02/23
-    
+
 •	Code Restaurant server interaction flow in python (collect data from interactions) Due -- 03/09
 
 •	Web interface integration 03/16
@@ -69,5 +69,3 @@ This is the user story in regards to the restaurant server and the coding in pyt
 	Code in python: Customer inputs attentive of server 1-7 scale? Due -- 03/02
 	Code in python: Timer stops: results are calculated in %.. Add tip calculator Due - 03/06
 	Code in python: Customer input on server visit the table 1-10 (higher the better) Due - 03/07
-	
-
