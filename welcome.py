@@ -1,4 +1,4 @@
-'''this program hasnt prevent user input the wrong information yet.'''
+'''this program hasn't prevent user input the wrong information yet.'''
 import time
 sdelay = 0.2
 ldelay = 1.0
