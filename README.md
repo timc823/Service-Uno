@@ -71,7 +71,8 @@ Velocity : 0.5
 Work done: 66**
 
 
-##Milestone 1
+
+## Milestone 1
 
 **Iteration 1**
 
@@ -108,7 +109,7 @@ Task Details
 
 
 
-##Iteration 2
+## Iteration 2
 
 Schedule
 
@@ -123,7 +124,7 @@ Effort
     •	Work Team can Handle: 24 days
     
 
-##Forms of Communication
+## Forms of Communication
 
 **Slack**
 
