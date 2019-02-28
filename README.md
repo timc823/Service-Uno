@@ -2,66 +2,66 @@
 # Course
 IST-303 Software Development (Claremont Graduate University)
 
-## Team Name:
+# Team Name:
 Uno
-## Team Members:
+# Team Members:
 Jovany Funes  
 Tim Chen  
 Penny Peng    
 Kevin Jin
 
-## ServiceUNO Project (Concept):
+# ServiceUNO Project (Concept):
 
 ServiceUNO will be an application with a web interface; it will eventually be integrated by using hardware such as the raspberry pi. ServiceUNO will collect key data that will be quantified based on key services provided by the server and bartender. This information will also be valuable to businesses; the business will benefit from the data to evaluate customer service experience and improve their services by customer feedback. ServiceUNO will rate the server and feature their great customer service skills to maximize their gaining potential (TIPS).
 
 
-## Stake Holder
+# Stake Holder
 
-**Customers**
+## Customers
 
 Customers will be our main focus user, we noticed that customers at restaurants have had complaints and bad experiences with the service at restaurants. When customers want to complain, they have outlets such as Yelp, but this platform rates the restaurant not the server. With our program we will create a platform that will allow customers to rate the service of a server so when people visit the restaurant they know what to expect from their service. Our program will also have a generating recommended tip amount based on the service provided.
 
-**Restaurant business owners**
+## Restaurant business owners 
 
 As a restaurant business owner, the goal is to keep the customer happy and retain their business. When a customer complains about the service it can affect the business reputation. A business owner wants to improve and identify where the service need is and with our program, the business owner will know how a customer is rating the service in real time, this is important because the managers can come over and “check in” on the customer to better their experience. For servers that provide good quality services, the business owner may offer some bonus or rewards. The data will also help improve servers that are not preforming to the standards of delivering great customer. Those servers may need additional support and our program will be able to inform business owners and managers to give additional support to those servers. 
 
 
-**Servers (restaurants)**
+## Servers (restaurants)
 
 As a server working in the restaurant, they are providing service to customers and because of this service, customers will tip based on their interactions with the server. With our program, servers will be able to understand how to improve their customer service and provide excellent service to maximize their tips. Our program will rate the server and people that come to the restaurant may want to get that server, with our program they can see if their favorite server is able to serve them. This connection with customer and server will bring back customers to the restaurant.  
 
 
-##User Stories
+# User Stories
 
-**User Welcome Screen – Priority 10 – 1 day**
+## User Welcome Screen – Priority 10 – 1 day
 
 As a **Customer**, I want to be welcomed to the ServiceUNO program, so that I can begin my best customer experience with the server.
 
-**User Information – Priority 10 – 3 days**
+## User Information – Priority 10 – 3 days
 
 As a **Customer**, I want to create a customer profile for my restaurant experience inputting my name, email, and server, so that I can rate my server and experience.
 
-**User Questions – Priority 10 – 3 days**
+## User Questions – Priority 10 – 3 days
 
 As a **Customer**, I want to answer questions based on the service provided in real time, so that, the right data is being collected.
 
-**User GUI – Priority 10 – 5 days**
+## User GUI – Priority 10 – 5 days
 
 As a **Customer**, I want a nice interface that prompts questions, so that, I can provide the correct information.
 
-**Database – Priority 10 – 7 days**
+## Database – Priority 10 – 7 days
 
 As a **Customer**, Server, Owner I want the information inputted by the customer to go into a database, so that, the data can be analyzed. 
 
-**Business Dashboard – Priority 20 – 4 days**
+## Business Dashboard – Priority 20 – 4 days
 
 As a Business **Owner**, Server, I want to have a dashboard showing the data that is being collected in real time, so that, I can talk to servers and customers to provide the best customer experience.
 
-**User Suggested Tip – Priority 40 – 5 days**
+## User Suggested Tip – Priority 40 – 5 days
 
 As a **Customer**, I want to know the right amount to tip based off of my experience, so that, I can tip the server for their effort.
 
-**Server Ranks – Priority 40 – 5 days**
+## Server Ranks – Priority 40 – 5 days
 
 As a **Server**, I want to know the top 5 servers in the restaurant, so that, the server can improve ranking.
 
@@ -72,23 +72,23 @@ Work done: 66**
 
 
 
-## Milestone 1
+# Milestone 1
 
-**Iteration 1**
+## Iteration 1
 
-Schedule
+**Schedule**
 
     •	Start Feb 19, 2019
     •	Due by Mar 13, 2019
     •	Duration: 24 days
-Effort
+**Effort**
 
     •	Developers: 4
     •	Proposed Velocity: 0.5
     •	Days : 12
     •	Work Team can Handle: 24 days
 
-Task Details
+**Task Details**
 
     |    Feature         |                               Title                         |   Days  | Assigned |
     | ----------------   | ----------------------------------------------------------- | ------- | -------- |
@@ -103,7 +103,9 @@ Task Details
     | Interface GUI      | Wireframe interface for program                             |   1.0   | Penny    |
     | Interface GUI      | Validate GUI interface functioning                          |   1.0   | All      |
 
-**Burn Down Graph**
+
+## Burn Down Graph
+
 ![Burn Down Image](https://github.com/cct823/Service-Uno/blob/master/Burndown.PNG)
 
 
@@ -111,12 +113,12 @@ Task Details
 
 ## Iteration 2
 
-Schedule
+**Schedule**
 
     •	Start Mar 13, 2019
     •	Due by Apr 7, 2019
     •	Duration: 24 days
-Effort
+**Effort**
 
     •	Developers: 4
     •	Proposed Velocity: 0.5
@@ -124,7 +126,7 @@ Effort
     •	Work Team can Handle: 24 days
     
 
-## Forms of Communication
+# Forms of Communication
 
 **Slack**
 
@@ -138,7 +140,7 @@ Period: Weekly (Every Wednesday Before & After Class)
 
 
 
-## Software Development Planning Outline (Version 1)
+# Software Development Planning Outline (Version 1)
 
 •	Outline Server Flow (observe and collect data) – Due 02/23
 
