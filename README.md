@@ -128,11 +128,11 @@ Work done: 66**
 
 # Forms of Communication
 
-**Slack**
+## Slack
 
 Period: Daily (Can provide chat if needed)
 
-**Face to Face meeting**
+## Face to Face meeting
 
 Period: Weekly (Every Wednesday Before & After Class)
 
