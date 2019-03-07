@@ -59,7 +59,4 @@ if __name__ == "__main__":
     ui.setupUi(newWindow)
     newWindow.show()
     sys.exit(app.exec_())
-<<<<<<< HEAD
 
-=======
->>>>>>> a57e9b80feae684e24071f2f8eb668f121f98118
