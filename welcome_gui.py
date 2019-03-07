@@ -7,8 +7,16 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from newWindow import Ui_newWindow
 
 class Ui_MainWindow(object):
+    def openWindow(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_newWindow()
+        self.ui.setupUi(self.window)
+        MainWindow.hide()
+        self.window.show()
+
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(757, 572)
@@ -23,6 +31,9 @@ class Ui_MainWindow(object):
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(330, 460, 93, 28))
         self.pushButton.setObjectName("pushButton")
+
+        self.pushButton.clicked.connect(self.openWindow)
+
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(140, 140, 521, 301))
         self.label_2.setObjectName("label_2")
@@ -42,7 +53,7 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label.setText(_translate("MainWindow", "Welcome"))
-        self.pushButton.setText(_translate("MainWindow", "OK!"))
+        self.pushButton.setText(_translate("MainWindow", "Start rating!"))
         self.label_2.setText(_translate("MainWindow", "<html><head/><body><p><img src=\":/newPrefix/Untitled.png\"/></p></body></html>"))
 
 import welcome_rc
