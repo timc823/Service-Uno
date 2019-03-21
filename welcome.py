@@ -34,43 +34,62 @@ def yes_no():
 
         L = input('Please input [yes/no] refer to the question:')
         if L == 'yes':
-            return 'yes'
+            return 10
         elif L =='no':
-            return 'no'
-        # else:
-        #     time.sleep(sdelay)
-        #     print('you enter something not related to the question, please enter again')
-        #     time.sleep(sdelay)
-        #     yes_no()
+            return 5
 
+def calculatescore():
+    a = 0
+    rank = []
+    print('Have you been seated?')
+    q1 = yes_no()
+    a += q1
+    print('Did your server greet you?')
+    q2 = yes_no()
+    a += q2
+    print('Did you order?')
+    q3 = yes_no()
+    a += q3
+    print('Did server bring you drinks?')
+    q4 = yes_no()
+    a += q4
+    print('Did server bring you appetizers')
+    q5 = yes_no()
+    a += q5
+    print('Did server bring you food?')
+    q6 = yes_no()
+    a += q6
+    print('Did server clean the table for you?')
+    q7 = yes_no()
+    a += q7
 
-answer = []
-rank = []
-print('Have you been sat?')
-q1 = yes_no()
-answer.append(q1)
-print('Did your server greet you?')
-q2 = yes_no()
-answer.append(q2)
-print('Did you order?')
-q3 = yes_no()
-answer.append(q3)
-print('Did server bring you drinks?')
-q4 = yes_no()
-answer.append(q4)
-print('Did server bring you appetizers')
-q5 = yes_no()
-answer.append(q5)
-print('Did server bring you food?')
-q6 = yes_no()
-answer.append(q6)
-print('Did server clean the table for you?')
-q7 = yes_no()
-answer.append(q7)
+    r1 = int(input('From 1-10, please provide a score for how satisified were you for the service: '))
+    a += r1
+    r2 = int(input('From 1-10, please provide a score for how friendly your server was: '))
+    a += r2
+    r3 = int(input('From 1-10, please provide a overall score for your server: '))
+    a += r3
+    # answer = yes_no(L)
 
-print('Are you satisfied with the service from server?')
-k = input('From 1-5,please rank how satisfy are you?')
-rank.append(k)
-#answer = yes_no(L)
-print(answer)
-print(rank)
+    return a
+
+score = calculatescore()
+scale = score / 100
+bill = eval(input('Please input the bill amount: '))
+TipPercent = 0
+if scale >= 0.95:
+    TipPercent = 0.35
+elif scale >= 0.9 and scale <0.95:
+    TipPercent = 0.3
+elif scale >= 0.75 and scale <0.89:
+    TipPercent = 0.2
+elif scale >= 0.6 and scale <0.75:
+    TipPercent = 0.15
+elif scale >= 0.3 and scale <0.6:
+    TipPercent = 0.1
+else:
+    TipPercent = 0.05
+
+Tips = bill*TipPercent
+print('Base on your bill amount and the service you have today, we think amount of ', Tips,
+      'is the valuable amount to tip your server.')
