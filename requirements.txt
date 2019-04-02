@@ -176,14 +176,10 @@ sortedcollections==1.0.1
 sortedcontainers==2.1.0
 Sphinx==1.8.2
 sphinxcontrib-websupport==1.1.0
-spyder==3.3.2
-spyder-kernels==0.3.0
 SQLAlchemy==1.2.15
 statsmodels==0.9.0
 sympy==1.3
 tables==3.4.4
-# Editable install with no version control (tasks==0.1.0)
--e /anaconda3/lib/python3.7/site-packages
 tasks-py==1.0.3
 tblib==1.3.2
 terminado==0.8.1
