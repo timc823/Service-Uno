@@ -1,6 +1,36 @@
 ![Program Image](https://github.com/cct823/Service-Uno/blob/master/Untitled.png)
+
+# Install and Run
+**Install Program**
+
+    Install virtualenv:
+    ~Service-Uno> pip install virutalenv
+    
+    Create virtual environment:
+    ~Service-Uno> virtualenv venv
+    
+    Activate virtual environment:
+    ~Service-Uno> .\venv\Scripts\activate
+    
+    Install packages:
+    ~Service-Uno> pip install -r requirements.txt
+**Run program**    
+
+    Clone the repo: 
+    git clone https://github.com/cct823/Service-Uno.git
+    
+    Run the program:
+    python3 newWindow.py
+    
+**Run the test**
+    
+    to be added....
+    
+
+
 # Course
 IST-303 Software Development (Claremont Graduate University)
+
 
 # Team Name:
 Uno
