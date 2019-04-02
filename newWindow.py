@@ -8,7 +8,8 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-score = 0
+score = [0] * 10
+i = [0] * 10
 
 class Ui_newWindow(object):
     def setupUi(self, newWindow):
@@ -59,64 +60,115 @@ class Ui_newWindow(object):
         self.pushButton.setText(_translate("newWindow", "Submit"))
 
     def btn_clk(self, chk):
+        score1 = 0
         global score
+        global i
+        i[0] = i[0]+1
         if chk:
             self.label2.setText("yes")
-            score += 10
+            score1 += 10
         else:
             self.label2.setText("No")
         self.label.setText("2. Did your server greet you?")
+        if i[0] == 1:
+            score[0] = score1
+            print("Q1", score1, i[0],score[0])
         self.pushButton.clicked.connect(lambda: self.btn_clk1(self.radioButton.isChecked()))
-        print(score)
+
+
     def btn_clk1(self, chk):
+        score2 = 0
         global score
+        global i
+        i[1] = i[1]+1
         if chk:
             self.label2.setText("yes")
-            score += 10
+            score2 += 10
         else:
             self.label2.setText("No")
         self.label.setText("3. Did you order?")
+        if i[1] == 1:
+            score[1] = score2
+            print("Q2", score2, i[1],score[1])
         self.pushButton.clicked.connect(lambda: self.btn_clk2(self.radioButton.isChecked()))
-        print(score)
     def btn_clk2(self, chk):
+        score3 = 0
         global score
+        global i
+        i[2] = i[2]+1
         if chk:
             self.label2.setText("yes")
-            score += 10
+            score3 += 10
         else:
             self.label2.setText("No")
         self.label.setText("4. Did server bring you drinks?")
+        if i[2] == 1:
+            score[2] = score3
+            print("Q3", score3, i[2],score[2])
         self.pushButton.clicked.connect(lambda: self.btn_clk3(self.radioButton.isChecked()))
-        print(score)
+
     def btn_clk3(self, chk):
+        score4 = 0
         global score
+        global i
+        i[3] = i[3]+1
         if chk:
             self.label2.setText("yes")
-            score += 10
+            score4 += 10
         else:
             self.label2.setText("No")
         self.label.setText("5. Did server bring you appetizers")
+        if i[3] == 1:
+            score[3] = score4
+            print("Q4", score4, i[3],score[3])
         self.pushButton.clicked.connect(lambda: self.btn_clk4(self.radioButton.isChecked()))
-        print(score)
     def btn_clk4(self, chk):
+        score5 = 0
         global score
+        global i
+        i[4] = i[4]+1
         if chk:
             self.label2.setText("yes")
-            score += 10
+            score5 += 10
         else:
             self.label2.setText("No")
         self.label.setText("6. Did server bring you food?")
+        if i[4] == 1:
+            score[4] = score5
+            print("Q5", score5, i[4],score[4])
         self.pushButton.clicked.connect(lambda: self.btn_clk5(self.radioButton.isChecked()))
-        print(score)
+
     def btn_clk5(self, chk):
+        score6 = 0
         global score
+        global i
+        i[5] = i[5]+1
         if chk:
             self.label2.setText("yes")
-            score += 10
+            score6 += 10
         else:
             self.label2.setText("No")
         self.label.setText("7. Did server clean the table for you?")
+        if i[5] == 1:
+            score[5] = score6
+            print("Q6", score6, i[5],score[5])
         self.pushButton.clicked.connect(lambda: self.btn_clk6(self.radioButton.isChecked()))
+
+    def btn_clk6(self, chk):
+        score7 = 0
+        global score
+        global i
+        i[6] = i[6]+1
+        if chk:
+            self.label2.setText("yes")
+            score7 += 10
+        else:
+            self.label2.setText("No")
+        self.label.setText("8.xxxxxxxxxxxxxx")
+        if i[6] == 1:
+            score[6] = score7
+            print("Q7", score7, i[6],score[6])
+        self.pushButton.setEnabled(False)
         print(score)
 
 if __name__ == "__main__":
