@@ -10,14 +10,16 @@
     ~Service-Uno> virtualenv venv
     
     Activate virtual environment:
-    ~Service-Uno> .\venv\Scripts\activate
+    ~Service-Uno> source venv/bin/activate
     
-    Install packages:
-    ~Service-Uno> pip install -r requirements.txt
+    
 **Run Program**    
 
     Clone the repo: 
     git clone https://github.com/cct823/Service-Uno.git
+    
+    Install packages:
+    ~Service-Uno> pip install -r requirements.txt
     
     Run the program:
     python3 newWindow.py
