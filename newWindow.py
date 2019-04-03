@@ -10,6 +10,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from UnoDBex import ServiceUno
+import sys
 
 score = [0] * 10
 i = [0] * 10
@@ -208,7 +209,6 @@ class Ui_newWindow(object):
         ss.AddService(score[0], score[1], score[2], score[3], score[4], score[5],
                       score[6], )  # Add questions to table Need to get from NewWindow.py
         ss.Close()
-
         sys.exit()
 
 
