@@ -198,10 +198,8 @@ elif scale >= 0.75 and scale < 0.89:
     TipPercent = 0.2
 elif scale >= 0.6 and scale < 0.75:
     TipPercent = 0.15
-elif scale >= 0.3 and scale < 0.6:
-    TipPercent = 0.1
 else:
-    TipPercent = 0.05
+    TipPercent = 0.1
 
 Tips = bill * TipPercent
 print('Base on your bill amount and the service you have today, we think amount of ', Tips,
