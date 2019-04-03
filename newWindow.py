@@ -172,8 +172,9 @@ class Ui_newWindow(object):
         #self.pushButton.setVisible(False)
         #self.label2.setVisible(False)
         #self.groupBox.setVisible(False)
-        self.close()
         print(score)
+        self.close()
+
 
 
 
