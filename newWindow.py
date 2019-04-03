@@ -69,6 +69,7 @@ class Ui_newWindow(object):
             score1 += 10
         else:
             self.label2.setText("No")
+            score1 += 5
         self.label.setText("2. Did your server greet you?")
         if i[0] == 1:
             score[0] = score1
@@ -86,6 +87,7 @@ class Ui_newWindow(object):
             score2 += 10
         else:
             self.label2.setText("No")
+            score2 += 5
         self.label.setText("3. Did you order?")
         if i[1] == 1:
             score[1] = score2
@@ -101,6 +103,7 @@ class Ui_newWindow(object):
             score3 += 10
         else:
             self.label2.setText("No")
+            score3 += 5
         self.label.setText("4. Did server bring you drinks?")
         if i[2] == 1:
             score[2] = score3
@@ -117,6 +120,7 @@ class Ui_newWindow(object):
             score4 += 10
         else:
             self.label2.setText("No")
+            score4 += 5
         self.label.setText("5. Did server bring you appetizers")
         if i[3] == 1:
             score[3] = score4
@@ -132,6 +136,7 @@ class Ui_newWindow(object):
             score5 += 10
         else:
             self.label2.setText("No")
+            score5 += 5
         self.label.setText("6. Did server bring you food?")
         if i[4] == 1:
             score[4] = score5
@@ -148,6 +153,7 @@ class Ui_newWindow(object):
             score6 += 10
         else:
             self.label2.setText("No")
+            score6 += 5
         self.label.setText("7. Did server clean the table for you?")
         if i[5] == 1:
             score[5] = score6
@@ -164,6 +170,7 @@ class Ui_newWindow(object):
             score7 += 10
         else:
             self.label2.setText("No")
+            score7 += 5
         #self.label.setText("Thank you!!!")
         if i[6] == 1:
             score[6] = score7
@@ -173,7 +180,7 @@ class Ui_newWindow(object):
         #self.label2.setVisible(False)
         #self.groupBox.setVisible(False)
         print(score)
-        self.close()
+
 
         overall = sum(score)
         scale = overall / 100
@@ -194,7 +201,7 @@ class Ui_newWindow(object):
         print('Base on your bill amount and the service you have today, we think amount of ', Tips,
               'is the valuable amount to tip your server.')
 
-
+        sys.exit()
 
 
 
@@ -210,4 +217,3 @@ if __name__ == "__main__":
 '''To Kevin: This is the code to generate the tips, in Q7, you are printing the list now, I sum the list and
     create a scale to calculate it. Hence, when you finish the Q10, it should be able to work if you paste it under the
     function. Let me know when you finish the program and I will paste it.'''
-
