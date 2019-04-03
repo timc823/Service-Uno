@@ -14,7 +14,7 @@
     
     Install packages:
     ~Service-Uno> pip install -r requirements.txt
-**Run program**    
+**Run Program**    
 
     Clone the repo: 
     git clone https://github.com/cct823/Service-Uno.git
@@ -22,9 +22,9 @@
     Run the program:
     python3 newWindow.py
     
-**Run the test**
+**Run Tests**
     
-    to be added....
+    pytest -v tiptest.py
     
 
 
