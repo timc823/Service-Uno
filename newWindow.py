@@ -202,7 +202,7 @@ class Ui_newWindow(object):
             TipPercent = 0.1
 
         Tips = bill * TipPercent
-        print('Base on your bill amount and the service you have today, we think amount of ', Tips,
+        print('Base on your bill amount and the service you have today, we think amount of ', "%.2f"%(Tips),
               'is the valuable amount to tip your server.')
         ss = ServiceUno("service.db")
         ss.CreateDb()
