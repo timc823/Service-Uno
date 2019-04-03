@@ -7,6 +7,7 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+import sys
 
 score = [0] * 10
 i = [0] * 10
@@ -206,7 +207,9 @@ class Ui_newWindow(object):
 
 
 if __name__ == "__main__":
+    from PyQt5.QtCore import pyqtRemoveInputHook
     import sys
+    pyqtRemoveInputHook()
     app = QtWidgets.QApplication(sys.argv)
     newWindow = QtWidgets.QMainWindow()
     ui = Ui_newWindow()
