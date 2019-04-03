@@ -175,6 +175,25 @@ class Ui_newWindow(object):
         print(score)
         self.close()
 
+        overall = sum(score)
+        scale = overall / 100
+        bill = eval(input('Please input the bill amount: '))
+        TipPercent = 0
+        if scale >= 0.95:
+            TipPercent = 0.35
+        elif scale >= 0.9 and scale < 0.95:
+            TipPercent = 0.3
+        elif scale >= 0.75 and scale < 0.89:
+            TipPercent = 0.2
+        elif scale >= 0.6 and scale < 0.75:
+            TipPercent = 0.15
+        else:
+            TipPercent = 0.1
+
+        Tips = bill * TipPercent
+        print('Base on your bill amount and the service you have today, we think amount of ', Tips,
+              'is the valuable amount to tip your server.')
+
 
 
 
@@ -191,21 +210,4 @@ if __name__ == "__main__":
 '''To Kevin: This is the code to generate the tips, in Q7, you are printing the list now, I sum the list and
     create a scale to calculate it. Hence, when you finish the Q10, it should be able to work if you paste it under the
     function. Let me know when you finish the program and I will paste it.'''
-overall = sum(score)
-scale = overall / 100
-bill = eval(input('Please input the bill amount: '))
-TipPercent = 0
-if scale >= 0.95:
-    TipPercent = 0.35
-elif scale >= 0.9 and scale < 0.95:
-    TipPercent = 0.3
-elif scale >= 0.75 and scale < 0.89:
-    TipPercent = 0.2
-elif scale >= 0.6 and scale < 0.75:
-    TipPercent = 0.15
-else:
-    TipPercent = 0.1
 
-Tips = bill * TipPercent
-print('Base on your bill amount and the service you have today, we think amount of ', Tips,
-      'is the valuable amount to tip your server.')
