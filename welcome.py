@@ -30,7 +30,7 @@ def welcome():
     print('...........................................................................................................')
     # print('')
     # print('')
-
+welcome()
 # def yes_no():
 #
 #         L = input('Please input [yes/no] refer to the question:')

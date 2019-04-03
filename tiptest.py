@@ -14,7 +14,7 @@ def caltips(score):
     elif scale >= 0.6 and scale < 0.75:
         TipPercent = 0.15
     else:
-        TipPercent = 0.1
+        TipPercent = 0.05
 
     Tips = bill * TipPercent
     return Tips
@@ -34,7 +34,7 @@ def test_three():
 
 def test_four():
     score = [5, 5, 5, 5, 5, 5, 5, 0, 0, 0]
-    assert caltips(score) == 10
+    assert caltips(score) == 5
 
 def test_five():
     score = [10, 10, 10, 5, 5, 10, 10, 10, 10, 10]
