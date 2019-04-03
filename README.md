@@ -4,7 +4,7 @@
 **Install Program**
 
     Install virtualenv:
-    ~Service-Uno> pip install virutalenv
+    ~Service-Uno> pip install virtualenv
     
     Create virtual environment:
     ~Service-Uno> virtualenv venv
