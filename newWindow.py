@@ -164,11 +164,15 @@ class Ui_newWindow(object):
             score7 += 10
         else:
             self.label2.setText("No")
-        self.label.setText("8.xxxxxxxxxxxxxx")
+        #self.label.setText("Thank you!!!")
         if i[6] == 1:
             score[6] = score7
             print("Q7", score7, i[6],score[6])
-        self.pushButton.setEnabled(False)
+        #self.pushButton.setEnabled(False)
+        #self.pushButton.setVisible(False)
+        #self.label2.setVisible(False)
+        #self.groupBox.setVisible(False)
+        self.close()
         print(score)
 
 
@@ -183,8 +187,8 @@ if __name__ == "__main__":
     newWindow.show()
     sys.exit(app.exec_())
 
-'''To Kevin: This is the code to generate the tips, in Q7, you are printing the list now, I sum the list and 
-    create a scale to calculate it. Hence, when you finish the Q10, it should be able to work if you paste it under the 
+'''To Kevin: This is the code to generate the tips, in Q7, you are printing the list now, I sum the list and
+    create a scale to calculate it. Hence, when you finish the Q10, it should be able to work if you paste it under the
     function. Let me know when you finish the program and I will paste it.'''
 overall = sum(score)
 scale = overall / 100
