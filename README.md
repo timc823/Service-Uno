@@ -10,6 +10,9 @@
     ~Service-Uno> virtualenv venv
     
     Activate virtual environment:
+    Windows:
+    ~Service-Uno> .\venv\Scripts\activate
+    Mac:
     ~Service-Uno> source venv/bin/activate
     
     
