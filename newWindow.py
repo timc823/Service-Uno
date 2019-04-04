@@ -189,6 +189,10 @@ class Ui_newWindow(object):
         overall = sum(score)
         scale = overall / 100
         bill = eval(input('Please input the bill amount: '))
+        while bill <= 0:
+           print('The bill amount should be greater than zero. Please input again')
+           bill = eval(input('Please input the bill amount: '))
+
         TipPercent = 0
         if scale >= 0.95:
             TipPercent = 0.35

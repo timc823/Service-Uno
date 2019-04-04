@@ -9,6 +9,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from newWindow import Ui_newWindow
 
+
 class Ui_MainWindow(object):
     def openWindow(self):
         self.window = QtWidgets.QMainWindow()
