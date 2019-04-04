@@ -22,7 +22,7 @@
     ~Service-Uno> pip install -r requirements.txt
     
     Run the program:
-    python3 newWindow.py
+    python3 welcome_gui.py
     
 **Run Tests**
     
