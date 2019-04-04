@@ -219,6 +219,8 @@ class Ui_newWindow(object):
 
 if __name__ == "__main__":
     import sys
+    from PyQt5.QtCore import pyqtRemoveInputHook
+    pyqtRemoveInputHook()
     app = QtWidgets.QApplication(sys.argv)
     newWindow = QtWidgets.QMainWindow()
     ui = Ui_newWindow()
@@ -229,4 +231,3 @@ if __name__ == "__main__":
 '''To Kevin: This is the code to generate the tips, in Q7, you are printing the list now, I sum the list and
     create a scale to calculate it. Hence, when you finish the Q10, it should be able to work if you paste it under the
     function. Let me know when you finish the program and I will paste it.'''
-
