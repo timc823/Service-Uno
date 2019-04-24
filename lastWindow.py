@@ -50,6 +50,13 @@ class Ui_lastWindow(object):
         print (text)
         if text == "":
             print("empty")
+            finalTip = "Wrong input, please try again."
+        elif text.isdigit() == False:
+            print("not a digit")
+            finalTip = "Wrong input, please try again."
+        elif int(text) <0:
+            print("negative")
+            finalTip = "Wrong input, please try again."
         else:
             overall = sum(config.score)
             scale = overall / 100
@@ -80,6 +87,8 @@ class Ui_lastWindow(object):
                           config.score[6], )  # Add questions to table Need to get from NewWindow.py
             except sqlite3.OperationalError as e:
                 print('sqlite error:', e.args[0])  # table companies already exists
+        self.label_2.setText(finalTip)
+
     def retranslateUi(self, lastWindow):
         _translate = QtCore.QCoreApplication.translate
         lastWindow.setWindowTitle(_translate("lastWindow", "lastWindow"))
