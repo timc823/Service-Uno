@@ -19,6 +19,10 @@ class Ui_lastWindow(object):
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(340, 450, 93, 28))
         self.pushButton.setObjectName("pushButton")
+        self.pushButton2 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton2.setGeometry(QtCore.QRect(560, 450, 93, 28))
+        self.pushButton2.setObjectName("pushButton2")
+        self.pushButton2.hide()
         self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit.setGeometry(QtCore.QRect(310, 150, 113, 22))
         self.lineEdit.setObjectName("lineEdit")
@@ -31,6 +35,9 @@ class Ui_lastWindow(object):
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(340, 80, 111, 16))
         self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(340, 300, 900, 80))
+        self.label_4.setObjectName("label_4")
         lastWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(lastWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 26))
@@ -44,6 +51,8 @@ class Ui_lastWindow(object):
         QtCore.QMetaObject.connectSlotsByName(lastWindow)
 
         self.pushButton.clicked.connect(lambda: self.btn_clk())
+        self.pushButton2.clicked.connect(lambda: self.btn_clk2())
+
 
     def btn_clk(self):
         text = self.lineEdit.text()
@@ -51,12 +60,18 @@ class Ui_lastWindow(object):
         if text == "":
             print("empty")
             finalTip = "Wrong input, please try again."
+            self.label_4.setText("")
+            self.pushButton2.hide()
         elif text.isdigit() == False:
             print("not a digit")
             finalTip = "Wrong input, please try again."
+            self.label_4.setText("")
+            self.pushButton2.hide()
         elif int(text) <0:
             print("negative")
             finalTip = "Wrong input, please try again."
+            self.label_4.setText("")
+            self.pushButton2.hide()
         else:
             overall = sum(config.score)
             scale = overall / 100
@@ -77,7 +92,7 @@ class Ui_lastWindow(object):
                 TipPercent = 0.1
 
             Tips = bill * TipPercent
-            finalTip = 'Base on your bill amount and the service you have today,\n we think amount of $' + "%.2f"%(Tips) + ' is the proper amount to tip your server.'
+            finalTip = 'Base on your bill amount and the service you have today,\nwe think amount of $' + "%.2f"%(Tips) + ' is the proper amount to tip your server.'
             self.label_2.setText(finalTip)
 
             ss = ServiceUno("service.db")
@@ -87,15 +102,24 @@ class Ui_lastWindow(object):
                           config.score[6], )  # Add questions to table Need to get from NewWindow.py
             except sqlite3.OperationalError as e:
                 print('sqlite error:', e.args[0])  # table companies already exists
+            totalText = ' Amout: $'+  "%.2f"%(bill) + '\n Tip:      $' + "%.2f"%(Tips) + '\n Total:   $' + "%.2f"%(bill+Tips) + ''
+            self.label_4.setText(totalText)
+            self.pushButton2.show()
         self.label_2.setText(finalTip)
+
+    def btn_clk2(self):
+        sys.exit()
 
     def retranslateUi(self, lastWindow):
         _translate = QtCore.QCoreApplication.translate
         lastWindow.setWindowTitle(_translate("lastWindow", "lastWindow"))
         self.pushButton.setText(_translate("lastWindow", "Submit"))
+        self.pushButton2.setText(_translate("lastWindow", "Exit"))
         self.label.setText(_translate("lastWindow", "Bill amount:"))
         self.label_2.setText(_translate("lastWindow", "Tip:"))
         self.label_3.setText(_translate("lastWindow", "Thank you!"))
+        self.label_4.setText(_translate("lastWindow", ""))
+
 
 
 if __name__ == "__main__":
