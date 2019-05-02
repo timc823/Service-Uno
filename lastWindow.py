@@ -6,9 +6,12 @@
 #
 # WARNING! All changes made in this file will be lost!
 import sqlite3
+import sys
+import pandas as pd
 from PyQt5 import QtCore, QtGui, QtWidgets
 import config
 from UnoDBex import ServiceUno
+
 
 class Ui_lastWindow(object):
     def setupUi(self, lastWindow):
@@ -26,8 +29,11 @@ class Ui_lastWindow(object):
         self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit.setGeometry(QtCore.QRect(310, 150, 113, 22))
         self.lineEdit.setObjectName("lineEdit")
+        self.lineEdit2 = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit2.setGeometry(QtCore.QRect(310, 120, 113, 22))
+        self.lineEdit2.setObjectName("lineEdit2")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(220, 150, 71, 16))
+        self.label.setGeometry(QtCore.QRect(190, 150, 90, 16))
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(220, 200, 900, 60))
@@ -38,6 +44,10 @@ class Ui_lastWindow(object):
         self.label_4 = QtWidgets.QLabel(self.centralwidget)
         self.label_4.setGeometry(QtCore.QRect(340, 300, 900, 80))
         self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(self.centralwidget)
+        self.label_5.setGeometry(QtCore.QRect(190, 120, 90, 16))
+        self.label_5.setObjectName("label_5")
+
         lastWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(lastWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 26))
@@ -56,6 +66,7 @@ class Ui_lastWindow(object):
 
     def btn_clk(self):
         text = self.lineEdit.text()
+        text2 = self.lineEdit2.text()
         print (text)
         if text == "":
             print("empty")
@@ -70,6 +81,11 @@ class Ui_lastWindow(object):
         elif int(text) <0:
             print("negative")
             finalTip = "Wrong input, please try again."
+            self.label_4.setText("")
+            self.pushButton2.hide()
+        elif text2 == "":
+            print("empty name")
+            finalTip = "Please fill in server's name."
             self.label_4.setText("")
             self.pushButton2.hide()
         else:
@@ -95,6 +111,16 @@ class Ui_lastWindow(object):
             finalTip = 'Base on your bill amount and the service you have today,\nwe think amount of $' + "%.2f"%(Tips) + ' is the proper amount to tip your server.'
             self.label_2.setText(finalTip)
 
+            config.finaldb = [text2] + config.score + [bill] + [Tips] + [bill+Tips]
+            print("FinalDB:",config.score)
+            print("FinalDB:",config.finaldb)
+
+            data = pd.read_csv('Data.csv')
+            data = data.drop(data.columns[0],axis=1)
+            newdata = data.append(pd.Series(config.finaldb, index= data.columns),ignore_index=True)
+            newdata.to_csv('Data.csv')
+
+            ''' Old database
             ss = ServiceUno("service.db")
             try:
                 ss.CreateDb()
@@ -102,6 +128,7 @@ class Ui_lastWindow(object):
                           config.score[6], )  # Add questions to table Need to get from NewWindow.py
             except sqlite3.OperationalError as e:
                 print('sqlite error:', e.args[0])  # table companies already exists
+            '''
             totalText = ' Amout: $'+  "%.2f"%(bill) + '\n Tip:      $' + "%.2f"%(Tips) + '\n Total:   $' + "%.2f"%(bill+Tips) + ''
             self.label_4.setText(totalText)
             self.pushButton2.show()
@@ -119,6 +146,7 @@ class Ui_lastWindow(object):
         self.label_2.setText(_translate("lastWindow", "Tip:"))
         self.label_3.setText(_translate("lastWindow", "Thank you!"))
         self.label_4.setText(_translate("lastWindow", ""))
+        self.label_5.setText(_translate("lastWindow", "Server Name:"))
 
 
 
