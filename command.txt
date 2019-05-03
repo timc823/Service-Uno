@@ -2,7 +2,11 @@
 
 pyuic5 -x "C:\CGU\OneDrive - Claremont Graduate University\IST303_Spring2019\teamwork\newWindow.ui" -o "C:\CGU\OneDrive - Claremont Graduate University\IST303_Spring2019\teamwork\newWindow.py"
 
-pyrcc5 -o "C:\CGU\OneDrive - Claremont Graduate University\IST303_Spring2019\teamwork\test_rc.py" "C:\CGU\OneDrive -
-Claremont Graduate University\IST303_Spring2019\teamwork\test.qrc"
+pyrcc5 -o "C:\CGU\OneDrive - Claremont Graduate University\IST303_Spring2019\teamwork\test_rc.py" "C:\CGU\OneDrive - Claremont Graduate University\IST303_Spring2019\teamwork\test.qrc"
 
 pyuic5 -x "C:\CGU\OneDrive - Claremont Graduate University\IST303_Spring2019\teamwork\lastWindow.ui" -o "C:\CGU\OneDrive - Claremont Graduate University\IST303_Spring2019\teamwork\lastWindow.py"
+
+pyuic5 -x "C:\CGU\OneDrive - Claremont Graduate University\IST303_Spring2019\teamwork\welcome_new.ui" -o "C:\CGU\OneDrive - Claremont Graduate University\IST303_Spring2019\teamwork\welcome_new.py"
+
+pyrcc5 -o "C:\CGU\OneDrive - Claremont Graduate University\IST303_Spring2019\teamwork\test_rc.py" "C:\CGU\OneDrive -
+Claremont Graduate University\IST303_Spring2019\teamwork\test.qrc"

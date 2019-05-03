@@ -1,0 +1,11 @@
+QPushButton {
+   background-color: #84008b;
+   color: #ffffff;
+   border-radius: 5px;
+   border-style: none;
+   height: 25px;
+}
+QRadioButton::indicator{
+width: 30px;
+height: 30px;
+}
