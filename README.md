@@ -139,13 +139,6 @@ Work done: 66**
     | Interface GUI      | Validate GUI interface functioning                          |   1.0   | All      |
 
 
-## Burn Down Graph
-
-![Burn Down Image](https://github.com/cct823/Service-Uno/blob/master/Burndown.PNG)
-
-
-
-
 ## Iteration 2
 
 **Schedule**
@@ -159,7 +152,23 @@ Work done: 66**
     •	Proposed Velocity: 0.5
     •	Days : 21
     •	Work Team can Handle: 24 days
-    
+
+
+**Task Details**
+
+    |    Feature         |                               Title                         |   Days  | Assigned |
+    | ----------------   | ----------------------------------------------------------- | ------- | -------- |
+    | User Information   | Create Information options for Customer in GUI with outputs |   2.0   | Kevin    |
+    | Data collection    | Save the data to the csv file for dashboard                 |   1.0   | Tim      |
+    | Customer Questions | Develop questions 8-10 for customer                         |   0.5   | Kevin    |
+    | Interface GUI      | Redesign the interface for costomer                         |   3.0   | Kevin    |
+    | Data collection    | Update the database                                         |   1.0   | Penny    |
+
+## Burn Down Graph
+
+![Burn Down Image](https://github.com/cct823/Service-Uno/blob/master/Burndown.PNG)
+
+
 
 # Forms of Communication
 
