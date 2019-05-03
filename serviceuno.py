@@ -175,7 +175,7 @@ class Ui_lastWindow(object):
 
 
 
-i = [0] * 10
+j = [0] * 10
 class Ui_thirdWindow(object):
     def openWindow(self):
         self.window = QtWidgets.QMainWindow()
@@ -305,11 +305,11 @@ class Ui_thirdWindow(object):
         for items in chk:
             if items.isChecked():
                 checked_radiobutton = items.text()
-                i[0] = i[0]+1
-                if i[0] == 1:
+                j[0] = j[0]+1
+                if j[0] == 1:
                     config.score[7] = int(checked_radiobutton)
                     #print(config.score)
-                    print("Q8", config.score[7], i[0],config.score[7])
+                    print("Q8", config.score[7], j[0],config.score[7])
         self.pushButton.clicked.connect(lambda: self.btn_clk2(self.centralwidget.findChildren(QtWidgets.QRadioButton)))
 
     def btn_clk2(self,chk):
@@ -318,21 +318,21 @@ class Ui_thirdWindow(object):
             if items.isChecked():
                 checked_radiobutton = items.text()
 
-                i[1] = i[1]+1
-                if i[1] == 1:
+                j[1] = j[1]+1
+                if j[1] == 1:
                     config.score[8] = int(checked_radiobutton)
                     #print(config.score)
-                    print("Q9", config.score[8], i[1],config.score[8])
+                    print("Q9", config.score[8], j[1],config.score[8])
         self.pushButton.clicked.connect(lambda: self.btn_clk3(self.centralwidget.findChildren(QtWidgets.QRadioButton)))
 
     def btn_clk3(self,chk):
         for items in chk:
             if items.isChecked():
                 checked_radiobutton = items.text()
-                i[2] = i[2]+1
-                if i[2] == 1:
+                j[2] = j[2]+1
+                if j[2] == 1:
                     config.score[9] = int(checked_radiobutton)
-                    print("Q10", config.score[9], i[2],config.score[9])
+                    print("Q10", config.score[9], j[2],config.score[9])
                     print(config.score)
                 self.label.setText("")
         self.groupBox.hide()
