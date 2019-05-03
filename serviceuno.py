@@ -7,11 +7,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from newWindow import *
 import sys
 import config
 import sqlite3
-import welcome_rc
 import test_rc
 import pandas as pd
 
