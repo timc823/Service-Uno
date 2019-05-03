@@ -156,14 +156,14 @@ Work done: 66**
 
 **Task Details**
 
-    |    Feature         |                               Title                         |   Days  | Assigned |
-    | ----------------   | ----------------------------------------------------------- | ------- | -------- |
-    | User Information   | Create Information options for Customer in GUI with outputs |   2.0   | Kevin    |
-    | Data collection    | Save the data to the csv file for dashboard                 |   1.0   | Tim      |
-    | Customer Questions | Develop questions 8-10 for customer                         |   0.5   | Kevin    |
-    | Interface GUI      | Redesign the interface for costomer                         |   3.0   | Kevin    |
-    | Data collection    | Update the database                                         |   1.0   | Penny    |
-
+    |    Feature         |                               Title                         |   Days  | Assigned|
+    | ----------------   | ----------------------------------------------------------- | ------- | --------|
+    | User Information   | Create Information options for Customer in GUI with outputs |   5.0   | Kevin   |
+    | Data collection    | Save the data to the csv file for dashboard                 |   3.0   | Tim     |
+    | Customer Questions | Develop questions 8-10 for customer                         |   4.0   | Kevin   |
+    | Interface GUI      | Redesign the interface for costomer                         |   4.0   | Kevin   |
+    | Data collection    | Update the database                                         |   5.0   | Penny   |
+    | Dashboard          | Create the dashboard for business owner                     |   3.0   | Jovany  |
 ## Burn Down Graph
 
 ![Burn Down Image](https://github.com/cct823/Service-Uno/blob/master/Burndown.PNG)
@@ -179,8 +179,6 @@ Period: Daily (Can provide chat if needed)
 ## Face to Face meeting
 
 Period: Weekly (Every Wednesday Before & After Class)
-
-
 
 
 
