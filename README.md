@@ -1,36 +1,36 @@
-![Program Image](https://github.com/cct823/Service-Uno/blob/master/Untitled.png)
+![Program Image](https://github.com/cct823/Service-Uno/blob/master/uno.png)
 
 # Install and Run
 **Install Program**
 
     Install virtualenv:
     ~Service-Uno> pip install virtualenv
-    
+
     Create virtual environment:
     ~Service-Uno> virtualenv venv
-    
+
     Activate virtual environment:
     Windows:
     ~Service-Uno> .\venv\Scripts\activate
     Mac:
     ~Service-Uno> source venv/bin/activate
-    
-    
+
+
 **Run Program**    
 
-    Clone the repo: 
+    Clone the repo:
     git clone https://github.com/cct823/Service-Uno.git
-    
+
     Install packages:
     ~Service-Uno> pip install -r requirements.txt
-    
+
     Run the program:
     python3 welcome_gui.py
-    
+
 **Run Tests**
-    
+
     pytest -v tiptest.py
-    
+
 
 
 # Course
@@ -56,9 +56,9 @@ ServiceUNO will be an application with a web interface; it will eventually be in
 
 Customers will be our main focus user, we noticed that customers at restaurants have had complaints and bad experiences with the service at restaurants. When customers want to complain, they have outlets such as Yelp, but this platform rates the restaurant not the server. With our program we will create a platform that will allow customers to rate the service of a server so when people visit the restaurant they know what to expect from their service. Our program will also have a generating recommended tip amount based on the service provided.
 
-## Restaurant business owners 
+## Restaurant business owners
 
-As a restaurant business owner, the goal is to keep the customer happy and retain their business. When a customer complains about the service it can affect the business reputation. A business owner wants to improve and identify where the service need is and with our program, the business owner will know how a customer is rating the service in real time, this is important because the managers can come over and “check in” on the customer to better their experience. For servers that provide good quality services, the business owner may offer some bonus or rewards. The data will also help improve servers that are not preforming to the standards of delivering great customer. Those servers may need additional support and our program will be able to inform business owners and managers to give additional support to those servers. 
+As a restaurant business owner, the goal is to keep the customer happy and retain their business. When a customer complains about the service it can affect the business reputation. A business owner wants to improve and identify where the service need is and with our program, the business owner will know how a customer is rating the service in real time, this is important because the managers can come over and “check in” on the customer to better their experience. For servers that provide good quality services, the business owner may offer some bonus or rewards. The data will also help improve servers that are not preforming to the standards of delivering great customer. Those servers may need additional support and our program will be able to inform business owners and managers to give additional support to those servers.
 
 
 ## Servers (restaurants)
@@ -86,7 +86,7 @@ As a **Customer**, I want a nice interface that prompts questions, so that, I ca
 
 ## Database – Priority 10 – 7 days
 
-As a **Customer**, Server, Owner I want the information inputted by the customer to go into a database, so that, the data can be analyzed. 
+As a **Customer**, Server, Owner I want the information inputted by the customer to go into a database, so that, the data can be analyzed.
 
 ## Business Dashboard – Priority 20 – 4 days
 
