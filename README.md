@@ -1,4 +1,4 @@
-![Program Image](https://github.com/cct823/Service-Uno/blob/master/uno.png)
+![Program Image](https://github.com/cct823/Service-Uno/blob/master/Source/uno.png)
 
 # Install and Run
 **Install Program**
@@ -166,7 +166,7 @@ Work done: 66**
     | Dashboard          | Create the dashboard for business owner                     |   3.0   | Jovany  |
 ## Burn Down Graph
 
-![Burn Down Image](https://github.com/cct823/Service-Uno/blob/master/Burndown.PNG)
+![Burn Down Image](https://github.com/cct823/Service-Uno/blob/master/Source/Burndown.PNG)
 
 
 
