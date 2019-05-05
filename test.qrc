@@ -1,7 +1,0 @@
-<RCC>
-  <qresource prefix="newPrefix">
-    <file>bg.jpg</file>
-    <file>Untitled.png</file>
-    <file>uno.png</file>
-  </qresource>
-</RCC>

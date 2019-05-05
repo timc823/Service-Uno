@@ -1,18 +1,18 @@
-
-
-from setuptools import setup
+from setuptools import setup , find_packages
 
 
 setup(
     name='Service-Uno',
-    version = '0.1.0',
-    description = 'A pytest plguin to greet you in the ASCII language before you run your tests',
-    url='https://wherever/you/have/info/on/this/package',
+    version = '1.2.0',
+    description = 'Service rating program',
+    url='https://github.com/cct823/Service-Uno',
     author = 'Service-Uno',
     author_email='Service-Uno@cgu.edu',
     license ='proprietary',
-    py_modules=['my_plugin'],
+    py_modules=['serviceuno'],
     install_requires = [''],
+    packages = find_packages(where='Source'),
+    package_dir = {'':'Source'}
     # entry_points = {'pytest11':['greeting = my_plugin']}
 )
 
