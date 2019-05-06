@@ -38,7 +38,7 @@ IST-303 Software Development (Claremont Graduate University)
 
 
 # Team Name:
-Uno
+ServiceUno
 # Team Members:
 Jovany Funes  
 Tim Chen  
