@@ -130,7 +130,7 @@ class Ui_lastWindow(object):
                 TipPercent = 0.1
 
             Tips = bill * TipPercent
-            finalTip = 'Base on your bill amount and the service you have today,\nwe think amount of $' + "%.2f"%(Tips) + ' is the proper amount to tip your server.'
+            finalTip = 'Based on your bill amount and your server experience input today,\nour suggested tip amount is $' + "%.2f"%(Tips) + ' this is a proper amount to tip your servers service. This is only a suggestion, we hope to see you soon.'
             self.label_2.setText(finalTip)
 
             config.finaldb = [text2] + config.score + [bill] + [Tips] + [bill+Tips]
@@ -295,11 +295,11 @@ class Ui_thirdWindow(object):
         self.radioButton_8.setText(_translate("thirdWindow", "8"))
         self.radioButton_9.setText(_translate("thirdWindow", "9"))
         self.radioButton_10.setText(_translate("thirdWindow", "10"))
-        self.label.setText(_translate("thirdWindow", "8. Please provide a score for how satisified were you for the service: "))
+        self.label.setText(_translate("thirdWindow", "8. Please score how satisfied you are with your server:\n(1 – Not satisfied at all, 5 — satisfied, 10 – Very satisfied)"))
         self.label_3.setText(_translate("MainWindow", "<html><head/><body><p><img src=\":/newPrefix/bg.jpg\"/></p></body></html>"))
 
     def btn_clk(self,chk):
-        self.label.setText("9. Please provide a score for how friendly your server was: ")
+        self.label.setText("9. Please score the friendliness of your server:\n (1 – Not friendly at all, 5 — friendly, 10 – Very friendly)")
         for items in chk:
             if items.isChecked():
                 checked_radiobutton = items.text()
@@ -311,7 +311,7 @@ class Ui_thirdWindow(object):
         self.pushButton.clicked.connect(lambda: self.btn_clk2(self.centralwidget.findChildren(QtWidgets.QRadioButton)))
 
     def btn_clk2(self,chk):
-        self.label.setText("10. Please provide a overall score for your server: ")
+        self.label.setText("Please score your overall experience with your server:\n (1 – Not a great experience, 5 – good experience, 10 – Great experience)")
         for items in chk:
             if items.isChecked():
                 checked_radiobutton = items.text()
@@ -456,7 +456,7 @@ class Ui_newWindow(object):
         else:
             #self.label2.setText("No")
             score1 += 5
-        self.label.setText("2. Did your server greet you?")
+        self.label.setText("2. Have you been greeted by your server?")
         if i[0] == 1:
             config.score[0] = score1
             print("Q1", score1, i[0],config.score[0])
@@ -474,7 +474,7 @@ class Ui_newWindow(object):
         else:
             #self.label2.setText("No")
             score2 += 5
-        self.label.setText("3. Did you order?")
+        self.label.setText("3. Have you ordered?")
         if i[1] == 1:
             config.score[1] = score2
             print("Q2", score2, i[1],config.score[1])
@@ -490,7 +490,7 @@ class Ui_newWindow(object):
         else:
             #self.label2.setText("No")
             score3 += 5
-        self.label.setText("4. Did server bring you drinks?")
+        self.label.setText("4. Has your server brought your drinks?")
         if i[2] == 1:
             config.score[2] = score3
             print("Q3", score3, i[2],config.score[2])
@@ -507,7 +507,7 @@ class Ui_newWindow(object):
         else:
             #self.label2.setText("No")
             score4 += 5
-        self.label.setText("5. Did server bring you appetizers")
+        self.label.setText("5. Have you received your appetizers?")
         if i[3] == 1:
             config.score[3] = score4
             print("Q4", score4, i[3],config.score[3])
@@ -523,7 +523,7 @@ class Ui_newWindow(object):
         else:
             #self.label2.setText("No")
             score5 += 5
-        self.label.setText("6. Did server bring you food?")
+        self.label.setText("6. Has your server brought your food?")
         if i[4] == 1:
             config.score[4] = score5
             print("Q5", score5, i[4],config.score[4])
@@ -540,7 +540,7 @@ class Ui_newWindow(object):
         else:
             #self.label2.setText("No")
             score6 += 5
-        self.label.setText("7. Did server clean the table for you?")
+        self.label.setText("7. Has your server cleared the table?")
         if i[5] == 1:
             config.score[5] = score6
             print("Q6", score6, i[5],config.score[5])
