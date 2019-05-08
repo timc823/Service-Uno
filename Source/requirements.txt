@@ -2,5 +2,8 @@ PyQt5==5.12.1
 pytest==4.3.1
 SQLite3Database==0.2.0
 pandas==0.24.2
+config==0.4.2
+peewee==3.9.5
+
 
 
