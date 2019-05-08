@@ -25,7 +25,7 @@
     ~Service-Uno> pip install -r requirements.txt
 
     Run the program:
-    python3 welcome_gui.py
+    python3 serviceuno.py
 
 **Run Tests**
 
