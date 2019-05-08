@@ -39,3 +39,34 @@ def test_four():
 def test_five():
     score = [10, 10, 10, 5, 5, 10, 10, 10, 10, 10]
     assert caltips(score) == 30
+
+def test_six():
+    L = ['Tim',10,10,10,10,10,10,10,10,10,10,100,30,130]
+    sum = 0
+    for i in range(1,11):
+        sum += L[i]
+    assert sum == L[-3]
+
+def test_seven():
+    L = ['Tim',10,10,10,10,10,10,10,10,10,10,100,30,130]
+    sum = 0
+    for i in range(1,11):
+        sum += L[i]
+    sum += L [-2]
+    assert sum == L[-1]
+
+@pytest.mark.xfail
+def test_eight():
+    L = ['Tim', 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 100, 30, 130]
+
+    for i in range(len(L[0])):
+        assert L[0][i].isalpha() == True
+
+
+@pytest.mark.xfail
+def test_nine():
+    L = ['Tim#', 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 100, 30, 130]
+
+    for i in range(len(L[0])):
+
+        assert L[0][i].isalpha() == True
