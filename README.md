@@ -11,9 +11,9 @@
 
     Activate virtual environment:
     Windows:
-        ~Service-Uno> .\venv\Scripts\activate
+    ~Service-Uno> .\venv\Scripts\activate
     Mac:
-        ~Service-Uno> source venv/bin/activate
+    ~Service-Uno> source venv/bin/activate
 
 
 **Run Program**    
@@ -24,20 +24,23 @@
     Install packages:
     ~Service-Uno> pip install -r requirements.txt
 
-    Run customer rating program :
+    Run customer rating program(In Source directory):
     Windows:
-        python serviceuno.py
+    python serviceuno.py
     Mac:
-        python3 serviceuno.py
+    python3 serviceuno.py
         
     Run dashboard program :
     Windows:
-        python dash.py
+    python dash.py
     Mac:
-        python3 dash.py
+    python3 dash.py
+    
 **Run Tests**
-
+    
+    Run test program(In Service-Uno directory):    
     pytest -v tiptest.py
+    
 
 
 
