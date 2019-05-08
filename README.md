@@ -11,9 +11,9 @@
 
     Activate virtual environment:
     Windows:
-    ~Service-Uno> .\venv\Scripts\activate
+        ~Service-Uno> .\venv\Scripts\activate
     Mac:
-    ~Service-Uno> source venv/bin/activate
+        ~Service-Uno> source venv/bin/activate
 
 
 **Run Program**    
@@ -24,9 +24,17 @@
     Install packages:
     ~Service-Uno> pip install -r requirements.txt
 
-    Run the program:
-    python3 serviceuno.py
-
+    Run customer rating program :
+    Windows:
+        python serviceuno.py
+    Mac:
+        python3 serviceuno.py
+        
+    Run dashboard program :
+    Windows:
+        python dash.py
+    Mac:
+        python3 dash.py
 **Run Tests**
 
     pytest -v tiptest.py
@@ -182,41 +190,10 @@ Period: Weekly (Every Wednesday Before & After Class)
 
 
 
-# Software Development Planning Outline (Version 1)
+# Three most important things we learned about project development:
+    
+1. The closer to the deadline to finish the milestone, that faster our team worked in order to produce our tasks.
 
-•	Outline Server Flow (observe and collect data) – Due 02/23
-
-•	Research on development of application:
-
-    a.	Python programing -- 02/23
-    b.	Web interface -- 02/23
-    c.	Servers for database -- 02/23
-    d.	Raspberry pi – 02/23
-
-•	Code Restaurant server interaction flow in python (collect data from interactions) Due -- 03/09
-
-•	Web interface integration 03/16
-
-•	Deploy application – 03/30
-
-•	Get Feedback from users – 04/06
-
-•	Re-adjust 04/10
-
-•	Raspberry pi 04/20
-
-**The outline is subject to change.
-User Stories (Restaurant server):**
-
-This is the user story in regards to the restaurant server and the coding in python that needs to be completed before the date of 03/09.
-
-	Code in python: Deploy a Timer to start the server in the background. Due -- 02/24
-	Code in python: Greeting prompt so customer can  Input data Due -- 02/24
-	Code in python: Prompt an Input from customer about taking an order or drink order Due -- 02/25
-	Code in python: Collect Input from customer yes – no? Due -- 02/25
-	Code in python: Collect input from customer yes – no – skip on drink or appetizer. Due – 02/26
-	Code in python: Prompt customer if food has arrived. Input yes – no. Due -- 03/01
-	Code in python: Collect input from customer on food yes – no – skip? Due --03/01
-	Code in python: Customer inputs attentive of server 1-7 scale? Due -- 03/02
-	Code in python: Timer stops: results are calculated in %.. Add tip calculator Due - 03/06
-	Code in python: Customer input on server visit the table 1-10 (higher the better) Due - 03/07
+2. Testing is important. Tests can help you find out the bug in your program. For example, we did not prevent customer input negative bill amount or other text. If we test is, we will know how to prevent it. Hence, when we were working on iteration two we know we have to test everything to prevent the bugs.
+ 
+3. Researching, browsing the internet is a must. There are many ways and different types of approaches to build on your code, you have to search through documents, videos, stack overflow, ask people, or ask the professor.
