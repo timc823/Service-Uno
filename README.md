@@ -193,7 +193,7 @@ Period: Weekly (Every Wednesday Before & After Class)
 
 
 
-# Three things we learned about project development
+# Three Things We Learned About Project Development
     
 1. The closer to the deadline to finish the milestone, that faster our team worked in order to produce our tasks.
 
