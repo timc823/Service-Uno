@@ -12,7 +12,7 @@ df = pandas.read_csv('Data.csv')
 # Create ColumnDataSource from data frame
 source = ColumnDataSource(df)
 
-output_file('dashboard.html')
+output_file('Dashboard.html')
 
 # server list
 server_list = source.data['Server'].tolist()
