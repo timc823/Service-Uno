@@ -20,34 +20,34 @@ def caltips(score):
     return Tips
 
 
-def test_one():
+def test_95():
     score = [10,10,10,10,10,10,10,10,10,10]
     assert caltips(score) == 35
 
-def test_two():
+def test_75():
     score = [10,5,10,5,10,10,5,10,10,10]
     assert caltips(score) == 20
 
-def test_three():
+def test_60():
     score = [5, 5, 5, 10, 5, 5, 10, 5, 6, 7]
     assert caltips(score) == 15
 
-def test_four():
+def test_30():
     score = [5, 5, 5, 5, 5, 5, 5, 0, 0, 0]
     assert caltips(score) == 5
 
-def test_five():
+def test_90():
     score = [10, 10, 10, 5, 5, 10, 10, 10, 10, 10]
     assert caltips(score) == 30
 
-def test_six():
+def test_score_inlist():
     L = ['Tim',10,10,10,10,10,10,10,10,10,10,100,30,130]
     sum = 0
     for i in range(1,11):
         sum += L[i]
     assert sum == L[-3]
 
-def test_seven():
+def test_totalamount():
     L = ['Tim',10,10,10,10,10,10,10,10,10,10,100,30,130]
     sum = 0
     for i in range(1,11):
@@ -55,8 +55,8 @@ def test_seven():
     sum += L [-2]
     assert sum == L[-1]
 
-@pytest.mark.xfail
-def test_eight():
+# @pytest.mark.xfail
+def test_correctname():
     L = ['Tim', 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 100, 30, 130]
 
     for i in range(len(L[0])):
@@ -64,7 +64,7 @@ def test_eight():
 
 
 @pytest.mark.xfail
-def test_nine():
+def test_incorrectname():
     L = ['Tim#', 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 100, 30, 130]
 
     for i in range(len(L[0])):
